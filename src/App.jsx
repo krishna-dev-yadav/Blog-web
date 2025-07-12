@@ -1,38 +1,25 @@
 import React from 'react';
-import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import { HashRouter, Routes, Route } from 'react-router-dom';
 import Home from './components/pages/home';
-import Service from './components/pages/Service';
 import About from './components/pages/about';
+import Service from './components/pages/Service';
 import Navbar from './components/navbar';
 
-
-const router = createBrowserRouter([
-  {
-    path: '/home',
-    element: <div className='bg-black w-full min-h-screen' >
-      <Navbar />,
-      <Home />
-    </div>,
-  },
-  {
-    path: '/about',
-    element: <div className='bg-black w-full min-h-screen'>
-      <Navbar />,
-      <About />
-    </div>
-  },
-  {
-    path: '/service',
-    element: <div className='bg-black w-full min-h-screen'>
-      <Navbar />,
-      <Service />
-    </div>
-  }
-]);
-
 const App = () => {
-  return <RouterProvider router={router} />;
+  return (
+    <HashRouter>
+      <div className="bg-black w-full min-h-screen">
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="*" element={<Home />} />
+          <Route path="/home" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/service" element={<Service />} />
+        </Routes>
+      </div>
+    </HashRouter>
+  );
 };
-
 
 export default App;

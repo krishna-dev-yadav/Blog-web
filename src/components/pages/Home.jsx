@@ -65,7 +65,7 @@ const Home = () => {
                     )
                 })
             });
-          
+
 
             return () => ctx.revert();
         }
@@ -83,14 +83,14 @@ const Home = () => {
         <div className="w-full " ref={secRef}>
             <section className="relative w-full h-screen overflow-hidden -mt-6">
                 <video
-                    id="video"
-                    src="/9667570-hd_1920_1080_25fps (2).mp4"
+                    src={`${import.meta.env.BASE_URL}bg-video.mp4`}
                     autoPlay
                     muted
                     loop
                     playsInline
                     className="absolute top-0 left-0 w-full h-full object-cover"
                 />
+
                 <div className="absolute bottom-0 left-0 w-full h-48 bg-gradient-to-t from-black to-transparent z-20 pointer-events-none" />
                 <div className="relative z-30 flex flex-col justify-center items-center h-full text-white text-center bg-black/40">
                     <div className="text-4xl font-bold drop-shadow">Welcome to Blogpost</div>
