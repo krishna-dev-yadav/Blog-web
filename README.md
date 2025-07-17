@@ -56,7 +56,7 @@ npm run dev
 
 ---
 
-🌐 Live Demo
+🌐 https://krishna-dev-yadav.github.io/Blog-web/#
 
 🔗 Visit Blog App
 
@@ -80,7 +80,7 @@ Beginner-friendly code
 🙋‍♂️ Author
 
 Krishna Yadav
-🔗 GitHub
+🔗 https://github.com/krishna-dev-yadav
 
 
 
