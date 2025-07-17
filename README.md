@@ -38,36 +38,6 @@ JavaScript (ES6)
 
 
 
----
-
-📸 Screenshots
-
-> (Add screenshots if available)
-
-
-
-
----
-
-📂 Folder Structure
-
-src/
-│
-├── components/
-│   └── BlogList.js
-│   └── BlogDetails.js
-│   └── CreateBlog.js
-│
-├── pages/
-│   └── Home.js
-│   └── About.js
-│
-├── App.js
-├── index.js
-
-
----
-
 🧑‍💻 Getting Started
 
 1. Clone the repo
